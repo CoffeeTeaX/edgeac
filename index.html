@@ -283,8 +283,8 @@
     };
    
     setInterval(function () {
-        if (window.devtools.isOpen) {
-            window.location.href = "www.baidu.com";
+        if (window.devtools) {
+            window.location.href = "https://www.baidu.com";
         }
     }, 500);
 </script>
