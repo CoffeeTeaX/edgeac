@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>EdgeAc 更新日志</title>
+    <!-- 引用 Bootstrap 的 CSS 文件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+            font-family: 'Quicksand', sans-serif;
+            background-color: #343a40;
+            color: #fff;
+        }
+
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            border-radius: 15px;
+            background-color: #2C3037;
+            color: #fff;
+            border: 1px solid #2C3037;
+        }
+
+        .card:hover {
+            transform: scale(1.05) rotate(0.5deg);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            background-color: #3C4148;
+        }
+
+        .card-title {
+            color: #FFE4E1;
+        }
+
+        .card-text {
+            color: #adb5bd;
+        }
+
+        .icon {
+            font-size: 24px;
+            margin-right: 8px;
+        }
+
+        .tag_beta {
+            float: right;
+            background-color: #6C757D;
+            color: #FFDEAD;
+            padding: 4px 8px;
+            border-radius: 5px;
+            margin-top: 8px;
+        }
+		
+		.tag_release {
+            float: right;
+            background-color: #6C757D;
+            color: #54FF9F;
+            padding: 4px 8px;
+            border-radius: 5px;
+            margin-top: 8px;
+        }
+		
+		.tag_warning {
+            float: right;
+            background-color: #6C757D;
+            color: #EE2C2C;
+            padding: 4px 8px;
+            border-radius: 5px;
+            margin-top: 8px;
+        }
+		
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="mt-4 mb-4">更新日志</h1>
+	
+	
+	
+	
+	
+	<div class="card mt-4">
+        <div class="card-body">
+            <h5 class="card-title"><span class="icon">&#128161;</span>v13.6.0A - 2023-12-17 08:39 PM<span class="tag_release">STABLE</span></h5>
+            <p class="card-text">
+                <ul>
+                    <li><span class="icon">&#10003;</span>增加了 version 子命令, 用于查询服务器运行的版本是否为最新版本</li>
+					<li><span class="icon">&#10003;</span>修正了 Glide A 误报</li>
+					<li><span class="icon">&#10003;</span>优化了 风控系统 运行逻辑</li>
+					<li><span class="icon">&#10003;</span>优化了 风控邮件 显示内容</li>
+					
+                </ul>
+            </p>
+        </div>
+    </div>
+	
+	<div class="card mt-4">
+        <div class="card-body">
+            <h5 class="card-title"><span class="icon">&#128161;</span>v13.5.9A - 2023-12-10 09:27 PM<span class="tag_release">STABLE</span></h5>
+            <p class="card-text">
+                <ul>
+                    <li><span class="icon">&#10003;</span>修正了 Speed E 误报</li>
+					<li><span class="icon">&#10003;</span>修正了 Flight J 误报</li>
+					
+                </ul>
+            </p>
+        </div>
+    </div>
+	
+	<div class="card mt-4">
+        <div class="card-body">
+            <h5 class="card-title"><span class="icon">&#128161;</span>v13.5.8A - 2023-12-03 12:31 PM<span class="tag_warning">WARNING</span></h5>
+            <p class="card-text">
+                <ul>
+                    <li><span class="icon">&#10003;</span>修正了 Criticals A 误报</li>
+					<li><span class="icon">&#10003;</span>修正了 NullPacket A 误报</li>
+					<li><span class="icon">&#10003;</span>修正了 Flight E 误报</li>
+					<li><span class="icon">&#10003;</span>修正了 Flight F 误报</li>
+					<li><span class="icon">&#10003;</span>修正了 Speed E 误报</li>
+					<li><span class="icon">&#10003;</span>修正了 Speed F 误报</li>
+					<li><span class="icon">&#10003;</span>优化了 日志显示 (可显示回放文件名)</li>
+					<li><span class="icon">&#10003;</span>优化了 封禁系统 (管理组触发封禁不会发送邮件)</li>
+					<li><span class="icon">&#10003;</span>优化了 授权码验证系统 (增加超时检测)</li>
+					
+                </ul>
+            </p>
+        </div>
+    </div>
+	
+	<div class="card mt-4">
+        <div class="card-body">
+            <h5 class="card-title"><span class="icon">&#128161;</span>v13.5.7A - 2023-12-03 11:38 PM<span class="tag_warning">WARNING</span></h5>
+            <p class="card-text">
+                <ul>
+                    <li><span class="icon">&#10003;</span>修正了 NullPacket A,B 逻辑优先级执行错误导致地形卡顿的问题</li>
+					<li><span class="icon">&#10003;</span>修正了 空指针 错误</li>
+					<li><span class="icon">&#10003;</span>移除了 check 子命令</li>
+					<li><span class="icon">&#10003;</span>添加了 unspec 子指令, 用于退出观战状态</li>
+					
+                </ul>
+            </p>
+        </div>
+    </div>
+	
+	<div class="card mt-4">
+        <div class="card-body">
+            <h5 class="card-title"><span class="icon">&#128161;</span>v13.5.6A - 2023-12-03 11:30 PM<span class="tag_warning">WARNING</span></h5>
+            <p class="card-text">
+                <ul>
+                    <li><span class="icon">&#10003;</span>修正了 Speed F 误报</li>
+					<li><span class="icon">&#10003;</span>优化了 数据分析 逻辑代码</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+	
+	<div class="card mt-4">
+        <div class="card-body">
+            <h5 class="card-title"><span class="icon">&#128161;</span>v13.5.5A - 2023-12-01 09:46 PM<span class="tag_release">STABLE</span></h5>
+            <p class="card-text">
+                <ul>
+                    <li><span class="icon">&#10003;</span>新增 <数据分析> 命令</li>
+					
+                </ul>
+            </p>
+        </div>
+    </div>
+	
+	<div class="card mt-4">
+        <div class="card-body">
+            <h5 class="card-title"><span class="icon">&#128161;</span>v13.5.4A - 2023-11-30 12:52 PM<span class="tag_beta">BETA</span></h5>
+            <p class="card-text">
+                <ul>
+                    <li><span class="icon">&#10003;</span>修正了 KillAura C 误报</li>
+					<li><span class="icon">&#10003;</span>修正了 KillAura H 误报</li>
+					<li><span class="icon">&#10003;</span>修正了 Strafe A 误报</li>
+					<li><span class="icon">&#10003;</span>修正了 Velocity A 误报</li>
+					<li><span class="icon">&#10003;</span>修正了 Velocity B 误报</li>
+					<li><span class="icon">&#10003;</span>修正了 Scaffold B 误报</li>
+					<li><span class="icon">&#10003;</span>修正了 Flight B 误报</li>
+					<li><span class="icon">&#10003;</span>修正了 Flight C 误报</li>
+					<li><span class="icon">&#10003;</span>修正了 Flight E 误报</li>
+					<li><span class="icon">&#10003;</span>修正了 Flight F 误报</li>
+					<li><span class="icon">&#10003;</span>修正了 Flight L 误报</li>
+					<li><span class="icon">&#10003;</span>优化了 拟合判定(以概率判定是否为暴力黑客) 的逻辑代码</li>
+					<li><span class="icon">&#10003;</span>优化了 拉回逻辑</li>
+					<li><span class="icon">&#10003;</span>优化了 debug 处理逻辑</li>
+					<li><span class="icon">&#10003;</span>优化了 sendMail 执行逻辑</li>
+					
+                </ul>
+            </p>
+        </div>
+    </div>
+	
+	<div class="card mt-4">
+        <div class="card-body">
+            <h5 class="card-title"><span class="icon">&#128161;</span>v13.5.3A - 2023-11-29 09:00 PM<span class="tag_release">STABLE</span></h5>
+            <p class="card-text">
+                <ul>
+                    <li><span class="icon">&#10003;</span>修正了 Flight B 误报</li>
+					<li><span class="icon">&#10003;</span>修正了 Speed E 误报</li>
+					<li><span class="icon">&#10003;</span>修正了 Scaffold B 误报</li>
+					<li><span class="icon">&#10003;</span>微调了 Timer A, B, C 延迟补偿阈值</li>
+					
+                </ul>
+            </p>
+        </div>
+    </div>
+	
+	<div class="card mt-4">
+        <div class="card-body">
+            <h5 class="card-title"><span class="icon">&#128161;</span>v13.5.2A - 2023-11-26 03:34 PM<span class="tag_release">STABLE</span></h5>
+            <p class="card-text">
+                <ul>
+                    <li><span class="icon">&#10003;</span>修正了 Timer A 高延迟误报</li>
+					<li><span class="icon">&#10003;</span>修正了 Flight 绕过</li>
+					
+                </ul>
+            </p>
+        </div>
+    </div>
+	
+	<div class="card mt-4">
+        <div class="card-body">
+            <h5 class="card-title"><span class="icon">&#128161;</span>v13.5.1A - 2023-11-25 12:46 PM<span class="tag_release">STABLE</span></h5>
+            <p class="card-text">
+                <ul>
+                    <li><span class="icon">&#10003;</span>修正了 NoSlow C 检测逻辑</li>
+					<li><span class="icon">&#10003;</span>优化了 Timer A 检测逻辑</li>
+					<li><span class="icon">&#10003;</span>优化了 Flight E 检测逻辑</li>
+					<li><span class="icon">&#10003;</span>优化了 Speed E 检测逻辑</li>
+					<li><span class="icon">&#10003;</span>修正了 Reach A 无法显示违规值的问题</li>
+					<li><span class="icon">&#10003;</span>优化了 拉回逻辑</li>
+					
+                </ul>
+            </p>
+        </div>
+    </div>
+	
+    <div class="card mt-4">
+        <div class="card-body">
+            <h5 class="card-title"><span class="icon">&#128161;</span>v13.5.0A - 2023-11-24 01:16 PM<span class="tag_release">STABLE</span></h5>
+            <p class="card-text">
+                <ul>
+                    <li><span class="icon">&#10003;</span>修正了 Flight I 假方块放置误报</li>
+					<li><span class="icon">&#10003;</span>修正了 KillAura C 检测逻辑</li>
+					<li><span class="icon">&#10003;</span>优化了 风控邮件 发送逻辑</li>
+					
+                </ul>
+            </p>
+        </div>
+    </div>
+	
+	
+    <div class="card mt-4">
+        <div class="card-body">
+            <h5 class="card-title"><span class="icon">&#128161;</span>v13.4.9A - 2023-11-23 01:24 AM<span class="tag_release">STABLE</span></h5>
+            <p class="card-text">
+                <ul>
+                    <li><span class="icon">&#10003;</span>回归了 v6.0.9 的部分移动检测</li>
+					<li><span class="icon">&#10003;</span>修正了 Speed C 误报</li>
+					<li><span class="icon">&#10003;</span>修正了 Velocity A 误报</li>
+					<li><span class="icon">&#10003;</span>删除了无用检测</li>
+					<li><span class="icon">&#10003;</span>增强了离地判定</li>
+					
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <!-- 更多版本可以按照相同的格式添加 -->
+
+</div>
+
+<!-- 引用 Bootstrap 的 JavaScript 文件，确保在 body 闭合标签前引用 -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
