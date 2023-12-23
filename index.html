@@ -9,7 +9,7 @@
         body {
             padding: 20px;
             font-family: 'Quicksand', sans-serif;
-            background-color: #343a40;
+            background-color: #1a1a1a;
             color: #fff;
         }
 
@@ -17,23 +17,32 @@
         .card {
             transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
             border-radius: 15px;
-            background-color: #2C3037;
+            background-color: #292929;
             color: #fff;
-            border: 1px solid #2C3037;
+            border: 1px solid #292929;
         }
 
         .card:hover {
             transform: scale(1.05) rotate(0.5deg);
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-            background-color: #3C4148;
+            background-color: #404040;
         }
 
         .card-title {
             color: #FFE4E1;
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .card-title .icon {
+            font-size: 28px;
+            margin-right: 10px;
         }
 
         .card-text {
             color: #adb5bd;
+            margin-top: 10px;
         }
 
         .icon {
